@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Креативний щоденник — Пошук</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Підключаємо jQuery для демонстрації лабораторної №5 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="page page--search" data-page="search">
+  <header class="header">
+    <div class="header__brand">Креативний <span class="header__accent">Щоденник</span></div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
+        <li class="nav__item"><a class="nav__link" href="inspiration.html">Натхнення</a></li>
+        <li class="nav__item"><a class="nav__link" href="notes.html">Нотатки</a></li>
+        <li class="nav__item"><a class="nav__link" href="search.html">Пошук</a></li>
+      </ul>
+    </nav>
+    <div class="header__theme">
+      <label class="theme-switch">
+        <input id="themeToggle4" type="checkbox" />
+        <span class="theme-switch__slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main class="main container">
+    <section class="search-block">
+      <h1 class="search-block__title">Пошук у проєкті</h1>
+
+      <div class="search-controls">
+        <input id="searchInput" class="search-controls__input" placeholder="Введіть текст або RegExp" />
+        <div class="search-controls__modes">
+          <label><input type="radio" name="mode" value="indexOf" checked /> indexOf</label>
+          <label><input type="radio" name="mode" value="regex" /> RegExp</label>
+          <label><input type="radio" name="mode" value="jquery" /> jQuery (локально)</label>
+        </div>
+        <button id="searchBtn" class="btn btn--primary">Пошук</button>
+        <button id="clearBtn" class="btn btn--ghost">Очистити</button>
+      </div>
+
+      <div id="searchResults" class="search-results"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">© 2025 — Креативний щоденник</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

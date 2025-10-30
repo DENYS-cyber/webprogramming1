@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Креативний щоденник — Нотатки</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page--notes" data-page="notes">
+  <header class="header">
+    <div class="header__brand">Креативний <span class="header__accent">Щоденник</span></div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
+        <li class="nav__item"><a class="nav__link" href="inspiration.html">Натхнення</a></li>
+        <li class="nav__item"><a class="nav__link" href="notes.html">Нотатки</a></li>
+        <li class="nav__item"><a class="nav__link" href="search.html">Пошук</a></li>
+      </ul>
+    </nav>
+    <div class="header__theme">
+      <label class="theme-switch">
+        <input id="themeToggle3" type="checkbox" />
+        <span class="theme-switch__slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main class="main container">
+    <section class="form-section">
+      <h1 class="form-section__title">Додати нотатку</h1>
+
+      <!-- Форма — HTML5-валидація через required/minlength/pattern -->
+      <form id="noteForm" class="note-form" novalidate>
+        <div class="note-form__row">
+          <label class="note-form__label" for="title">Заголовок</label>
+          <input id="title" name="title" class="note-form__input" type="text" required minlength="2" maxlength="80" placeholder="Короткий заголовок" />
+          <div class="note-form__hint">2–80 символів</div>
+        </div>
+
+        <div class="note-form__row">
+          <label class="note-form__label" for="content">Текст нотатки</label>
+          <textarea id="content" name="content" class="note-form__textarea" required minlength="5" maxlength="2000" placeholder="Опиши свою ідею..."></textarea>
+          <div class="note-form__hint">5–2000 символів</div>
+        </div>
+
+        <div class="note-form__row">
+          <label class="note-form__label" for="mood">Настрій</label>
+          <select id="mood" name="mood" class="note-form__select" required>
+            <option value="">Оберіть настрій</option>
+            <option value="inspired">Натхнений</option>
+            <option value="calm">Спокійний</option>
+            <option value="energetic">Енергійний</option>
+          </select>
+        </div>
+
+        <div class="note-form__actions">
+          <button class="btn btn--primary" type="submit">Зберегти нотатку</button>
+          <button class="btn btn--ghost" type="reset">Скинути</button>
+        </div>
+
+        <div id="formErrors" class="note-form__errors" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="saved-notes">
+      <h2 class="saved-notes__title">Збережені нотатки</h2>
+      <ul id="savedList" class="saved-notes__list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">© 2025 — Креативний щоденник</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

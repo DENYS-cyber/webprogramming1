@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Креативний щоденник</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="page page--home" data-page="home">
+  <header class="header">
+    <div class="header__brand">Креативний <span class="header__accent">Щоденник</span></div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
+        <li class="nav__item"><a class="nav__link" href="inspiration.html">Натхнення</a></li>
+        <li class="nav__item"><a class="nav__link" href="notes.html">Нотатки</a></li>
+        <li class="nav__item"><a class="nav__link" href="search.html">Пошук</a></li>
+      </ul>
+    </nav>
+    <div class="header__theme">
+      <label class="theme-switch">
+        <input id="themeToggle" type="checkbox" />
+        <span class="theme-switch__slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main class="main container">
+    <!-- Hero Section -->
+    <section class="hero hero--home">
+      <h1 class="hero__title">Креативний щоденник</h1>
+      <p class="hero__lead">
+        Місце, де народжуються ідеї, формується натхнення і зберігаються твої творчі думки.
+      </p>
+      <a class="btn btn--primary" href="notes.html">Записати ідею</a>
+    </section>
+
+    <!-- About Project -->
+    <section class="about-project">
+      <h2 class="about-project__title">Про проєкт</h2>
+      <p class="about-project__text">
+        <strong>«Креативний щоденник»</strong> — це інтерактивний простір для митців, студентів та всіх, хто цінує творчість. 
+        Тут можна зберігати ідеї, шукати натхнення, створювати нотатки, ділитися думками 
+        та впорядковувати власний творчий процес.
+      </p>
+      <p class="about-project__text">
+        Проєкт створено як демонстрацію сучасних вебтехнологій (HTML5, CSS BEM, JS модулі, LocalStorage) 
+        у межах лабораторної роботи. Але він легко може стати справжнім помічником для творчої людини.
+      </p>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <h2 class="features__title">Можливості щоденника</h2>
+      <ul class="features__list">
+        <li class="features__item">✏️ Створення і редагування нотаток</li>
+        <li class="features__item">🌈 Генерація цитат і творчих завдань</li>
+        <li class="features__item">🔍 Пошук записів за ключовими словами</li>
+        <li class="features__item">💾 Збереження у LocalStorage</li>
+        <li class="features__item">🌙 Світла / темна тема</li>
+        <li class="features__item">⚙️ Патерни JS: Module, IIFE, Observer, Behavior</li>
+      </ul>
+    </section>
+
+    <!-- How To Use -->
+    <section class="howto">
+      <h2 class="howto__title">Як користуватися</h2>
+      <ol class="howto__steps">
+        <li>Перейдіть у розділ <strong>«Нотатки»</strong> і створіть нову ідею.</li>
+        <li>Надихайтесь у вкладці <strong>«Натхнення»</strong> — цитати оновлюються автоматично.</li>
+        <li>Скористайтеся <strong>пошуком</strong>, щоб знайти потрібні думки чи замітки.</li>
+        <li>Перемикайте <strong>тему</strong> (світла/темна) для зручності.</li>
+      </ol>
+    </section>
+
+    <!-- Tech / Summary -->
+    <section class="specs">
+      <h2 class="specs__title">Технічні особливості</h2>
+      <ul class="specs__list">
+        <li>4 сторінки: Головна, Натхнення, Нотатки, Пошук.</li>
+        <li>HTML5 + CSS (BEM), JS модульна структура.</li>
+        <li>HTML5-валідація форм + custom-валидація.</li>
+        <li>Використано патерни Module, IIFE, Observer.</li>
+      </ul>
+    </section>
+
+    <!-- Author -->
+    <section class="author">
+      <h2 class="author__title">Про автора</h2>
+      <p class="author__text">
+        Цей проєкт створено студентом як лабораторну роботу з вебтехнологій. 
+        Мета — показати, що навіть навчальний код може бути натхненним, зручним і корисним.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© 2025 — Креативний щоденник · Проєкт для лабораторної роботи</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

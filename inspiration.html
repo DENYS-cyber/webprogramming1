@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Креативний щоденник — Натхнення</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page page--inspiration" data-page="inspiration">
+  <header class="header">
+    <div class="header__brand">Креативний <span class="header__accent">Щоденник</span></div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html">Головна</a></li>
+        <li class="nav__item"><a class="nav__link" href="inspiration.html">Натхнення</a></li>
+        <li class="nav__item"><a class="nav__link" href="notes.html">Нотатки</a></li>
+        <li class="nav__item"><a class="nav__link" href="search.html">Пошук</a></li>
+      </ul>
+    </nav>
+    <div class="header__theme">
+      <label class="theme-switch">
+        <input id="themeToggle2" type="checkbox" />
+        <span class="theme-switch__slider"></span>
+      </label>
+    </div>
+  </header>
+
+  <main class="main container">
+    <section class="quote-block">
+      <h1 class="quote-block__title">Цитата дня</h1>
+      <p id="inspQuote" class="quote-block__text">Завантаження цитати…</p>
+      <div class="quote-block__controls">
+        <button id="inspNew" class="btn btn--outline">Нова цитата</button>
+        <button id="copyQuote" class="btn">Копіювати</button>
+      </div>
+    </section>
+
+    <section class="prompts">
+      <h2 class="prompts__title">Творчі завдання</h2>
+      <div class="cards" id="promptCards">
+        <!-- JS згенерує картки -->
+      </div>
+      <div class="prompts__actions">
+        <button id="shufflePrompts" class="btn btn--primary">Згенерувати інші</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">© 2025 — Креативний щоденник</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
